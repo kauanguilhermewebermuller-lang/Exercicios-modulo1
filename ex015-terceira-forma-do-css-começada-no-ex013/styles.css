@@ -1,0 +1,13 @@
+ @charset "UTF-8";
+ 
+ 
+ body {background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 20px;}
+
+            h1 {background-color: black; color: rgb(3, 255, 66);}
+
+            h2{ color: rgb(204, 0, 255);}
+            
+            p{text-align: justify;}
+            <!-- agora da pra mudar as cores de todas as paginas bem facil mas tyem que colocar o l i n k antes -->
