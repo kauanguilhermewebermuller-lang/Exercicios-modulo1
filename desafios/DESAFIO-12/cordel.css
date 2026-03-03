@@ -1,12 +1,112 @@
 @charset "UTF-8";
 
+.passion-one-bold {            /* fonte 1*/
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sriracha-regular {            /* fonte 2 */
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}                                     
+
 header {
     background-color: #050505;
     text-align: center;
     color: white;
-    padding: 50px;
-    font-family: passion-one bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: "Passion One", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.titulo {
+    margin: 20px 0px 0px 0px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    margin: 0px;
+    font-weight: normal;
+    margin: 0px 0px 20px 0px;
+    font-family: verdana;
+    
 }
 body {
     margin: 0;
+}
+
+main {
+    font-family: "Sriracha", cursive;;
+    font-size: 32px;
+}
+.texto1 {
+    padding: 80px 0px 80px 30px;
+    text-align: left;
+    line-height: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p {
+    margin: 0px;
+}
+.p1 {
+    padding-bottom: 80px;
+}
+.cordel1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0px 80px 30px;
+    text-align: left;
+    line-height: 2;
+    margin-top: 50px;
+}
+.cordel-it {
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    
+}
+.cordel2 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0px 80px 30px;
+    text-align: left;
+    line-height: 2;
+    margin-top: 50px;
+}
+.cordel-it2{
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+.rodape {
+    background-color: black;
+    color: white;
+    font-family: verdana;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* detalhes agora*/
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+
 }
