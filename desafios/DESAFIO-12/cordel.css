@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+header {
+    background-color: #050505;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-family: passion-one bold;
+}
+body {
+    margin: 0;
+}
