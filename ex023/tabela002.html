@@ -11,17 +11,28 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
         thead {
-            background-color: gray;
+            background-color: rgb(88, 88, 88);
             color:white 
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(88, 88, 88) ;
+        }
+
+
+
+
         tfoot {
-            background-color: gray;
+            background-color: rgb(88, 88, 88);
             color:white;
             text-align: center;
         }
@@ -29,6 +40,15 @@
             text-align: right;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.616);
+        }
+        tbody > tr:nth-child(2n)  {
+            background-color: rgb(190, 190, 190);
+        }
 
 
 
@@ -40,13 +60,13 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população das unidades federativas</caption>
 
         <thead>
 
             <tr>
-                <th>estado</th>
-                <th>populaçao</th>
-                   
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 50px;">populaçao</th>
             </tr>
 
         </thead>
@@ -92,12 +112,105 @@
                 <td>Ceara</td>
                 <td class="num">9 132 076</td>
             </tr>
+
+            <tr>
+                <td>Para</td>
+                <td class="num">8 602 865</td>
+            </tr>
+            
+            <tr>
+                <td>santa catarina</td>
+                <td class="num">7 165 986</td>
+            </tr>
+
+            <tr>
+                <td>maranhao</td>
+                <td class="num">7 987 821</td>
+            </tr>
+            
+            <tr>
+                <td>goias</td>
+                <td class="num">7 957 523</td>
+            </tr>
+            
+            <tr>
+                <td>amazonas</td>
+                <td class="num">4 144 876</td>
+            </tr>
+            
+            <tr>
+                <td>espirito santo</td>
+                <td class="num">4 948 234</td>
+            </tr>
+
+            <tr>
+                <td>paraiba</td>
+                <td class="num">2 213 124</td>
+            </tr>
+
+            <tr>
+                <td>rio grande no norte</td>
+                <td class="num">3 507 234</td>
+            </tr>
+            <tr>
+                <td>mato grosso</td>
+                <td class="num">2 242 242</td>
+            </tr>
+
+            <tr>
+                <td>alagoas</td>
+                <td class="num">2 232 242</td>
+            </tr>
+            
+            <tr>
+                <td>piaui</td>
+                <td class="num">3 242 423</td>
+            </tr>
+
+            <tr>
+                <td>distrito federal</td>
+                <td class="num">3 015 242</td>
+            </tr>
+
+            <tr>
+                <td>mato grosso do sul</td>
+                <td class="num">2 778 242</td>
+            </tr>
+
+            <tr>
+                <td>sergipe</td>
+                <td class="num">2 298 789</td>
+            </tr>
+
+            <tr>
+                <td>rondonia</td>
+                <td class="num">2 242 423</td>
+            </tr>
+
+            <tr>
+                <td>tocantins</td>
+                <td class="num">2 893 234</td>
+            </tr>
+            <tr>
+                <td>acre</td>
+                <td class="num">878 242</td>
+            </tr>
+            
+            <tr>
+                <td>amapa</td>
+                <td class="num">845 789</td>
+            </tr>
+
+            <tr>
+                <td>roraima</td>
+                <td class="num">605 761</td>
+            </tr>
         </tbody>
 
         <tfoot>
 
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                     <td><strong>210.147.125</strong></td>
                 
             </tr>
@@ -105,5 +218,16 @@
         </tfoot>
 
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias consequatur unde quam ad quisquam non doloremque, amet enim consectetur explicabo facilis inventore vero mollitia dicta illum culpa. Obcaecati, nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto sapiente qui dolor accusantium deleniti voluptas, reprehenderit commodi dolorum sunt corporis voluptatibus cumque ipsam, veritatis eos doloribus ratione voluptate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur, ab inventore vitae quasi aliquid, fugiat deserunt repellendus optio qui quod praesentium dignissimos delectus. Quisquam rem aliquam dignissimos. Laboriosam, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste impedit! Quo repudiandae modi ut! Quod facere porro ea labore aliquid officiis ipsam dolorum molestiae, eligendi nam dolorem quos dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto soluta placeat eius minus, dolorem molestiae animi sequi et laborum ab libero, eaque, vel nihil obcaecati corporis dignissimos? Nam, optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quidem nobis molestias nihil, porro dolore eius possimus totam aut, ipsum sed ut. Incidunt, voluptatem! Qui modi quia similique deserunt eaque.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias consequatur unde quam ad quisquam non doloremque, amet enim consectetur explicabo facilis inventore vero mollitia dicta illum culpa. Obcaecati, nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto sapiente qui dolor accusantium deleniti voluptas, reprehenderit commodi dolorum sunt corporis voluptatibus cumque ipsam, veritatis eos doloribus ratione voluptate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur, ab inventore vitae quasi aliquid, fugiat deserunt repellendus optio qui quod praesentium dignissimos delectus. Quisquam rem aliquam dignissimos. Laboriosam, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste impedit! Quo repudiandae modi ut! Quod facere porro ea labore aliquid officiis ipsam dolorum molestiae, eligendi nam dolorem quos dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto soluta placeat eius minus, dolorem molestiae animi sequi et laborum ab libero, eaque, vel nihil obcaecati corporis dignissimos? Nam, optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quidem nobis molestias nihil, porro dolore eius possimus totam aut, ipsum sed ut. Incidunt, voluptatem! Qui modi quia similique deserunt eaque.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias consequatur unde quam ad quisquam non doloremque, amet enim consectetur explicabo facilis inventore vero mollitia dicta illum culpa. Obcaecati, nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto sapiente qui dolor accusantium deleniti voluptas, reprehenderit commodi dolorum sunt corporis voluptatibus cumque ipsam, veritatis eos doloribus ratione voluptate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur, ab inventore vitae quasi aliquid, fugiat deserunt repellendus optio qui quod praesentium dignissimos delectus. Quisquam rem aliquam dignissimos. Laboriosam, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste impedit! Quo repudiandae modi ut! Quod facere porro ea labore aliquid officiis ipsam dolorum molestiae, eligendi nam dolorem quos dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto soluta placeat eius minus, dolorem molestiae animi sequi et laborum ab libero, eaque, vel nihil obcaecati corporis dignissimos? Nam, optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quidem nobis molestias nihil, porro dolore eius possimus totam aut, ipsum sed ut. Incidunt, voluptatem! Qui modi quia similique deserunt eaque.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias consequatur unde quam ad quisquam non doloremque, amet enim consectetur explicabo facilis inventore vero mollitia dicta illum culpa. Obcaecati, nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto sapiente qui dolor accusantium deleniti voluptas, reprehenderit commodi dolorum sunt corporis voluptatibus cumque ipsam, veritatis eos doloribus ratione voluptate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur, ab inventore vitae quasi aliquid, fugiat deserunt repellendus optio qui quod praesentium dignissimos delectus. Quisquam rem aliquam dignissimos. Laboriosam, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste impedit! Quo repudiandae modi ut! Quod facere porro ea labore aliquid officiis ipsam dolorum molestiae, eligendi nam dolorem quos dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto soluta placeat eius minus, dolorem molestiae animi sequi et laborum ab libero, eaque, vel nihil obcaecati corporis dignissimos? Nam, optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quidem nobis molestias nihil, porro dolore eius possimus totam aut, ipsum sed ut. Incidunt, voluptatem! Qui modi quia similique deserunt eaque.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias consequatur unde quam ad quisquam non doloremque, amet enim consectetur explicabo facilis inventore vero mollitia dicta illum culpa. Obcaecati, nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto sapiente qui dolor accusantium deleniti voluptas, reprehenderit commodi dolorum sunt corporis voluptatibus cumque ipsam, veritatis eos doloribus ratione voluptate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur, ab inventore vitae quasi aliquid, fugiat deserunt repellendus optio qui quod praesentium dignissimos delectus. Quisquam rem aliquam dignissimos. Laboriosam, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste impedit! Quo repudiandae modi ut! Quod facere porro ea labore aliquid officiis ipsam dolorum molestiae, eligendi nam dolorem quos dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto soluta placeat eius minus, dolorem molestiae animi sequi et laborum ab libero, eaque, vel nihil obcaecati corporis dignissimos? Nam, optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quidem nobis molestias nihil, porro dolore eius possimus totam aut, ipsum sed ut. Incidunt, voluptatem! Qui modi quia similique deserunt eaque.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias consequatur unde quam ad quisquam non doloremque, amet enim consectetur explicabo facilis inventore vero mollitia dicta illum culpa. Obcaecati, nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto sapiente qui dolor accusantium deleniti voluptas, reprehenderit commodi dolorum sunt corporis voluptatibus cumque ipsam, veritatis eos doloribus ratione voluptate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur, ab inventore vitae quasi aliquid, fugiat deserunt repellendus optio qui quod praesentium dignissimos delectus. Quisquam rem aliquam dignissimos. Laboriosam, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste impedit! Quo repudiandae modi ut! Quod facere porro ea labore aliquid officiis ipsam dolorum molestiae, eligendi nam dolorem quos dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto soluta placeat eius minus, dolorem molestiae animi sequi et laborum ab libero, eaque, vel nihil obcaecati corporis dignissimos? Nam, optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quidem nobis molestias nihil, porro dolore eius possimus totam aut, ipsum sed ut. Incidunt, voluptatem! Qui modi quia similique deserunt eaque.</p>
 </body>
 </html>
