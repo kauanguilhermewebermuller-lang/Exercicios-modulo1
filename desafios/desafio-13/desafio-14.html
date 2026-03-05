@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            
+        }
+
+        th, td, tr {
+            border: 1px solid black;
+            padding: 10px;
+            width: 50px;
+        }
+
+        th {
+            background-color: rgb(104, 104, 104);
+        }
+
+        .fake {
+            font-weight: bold;
+            
+        }
+        th {
+            color: white;
+        }
+
+        th.esquerda {
+            text-align: left;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="row">Area</th>
+                <th rowspan="2" scope="rowgroup">disciplinas</th>
+                <th colspan="2" scope="rowgroup">Notas</th>
+                <th rowspan="2" scope="rowgroup">Media</th>
+            </tr>
+
+            <tr>
+                <th>Nota 1</th>
+                <Th>Nota 2</Th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="fake" rowspan="4">Exatas</th>
+                <td>matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+
+            </tr>
+
+            <tr>
+                <td>quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+
+            </tr>
+
+            <tr>
+                <td>biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+
+            </tr>
+
+            <tr>
+                <th scope="col" colspan="4" class="esquerda">Media de exatas</th>
+                <th scope="rowgroup">0.0</th>
+            </tr>
+
+            <tr>
+                <td class="fake" rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th scope="col" colspan="4" class="esquerda">Media de humanas</th>
+                <th scope="rowgroup">0.0</th>
+
+
+            </tr>
+
+
+        </tbody>
+
+
+    </table>
+
+
+    
+</body>
+</html>
