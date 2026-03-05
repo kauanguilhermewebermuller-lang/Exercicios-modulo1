@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de tabela</title>
+    <style>
+        body {
+             font-family: Arial, Helvetica, sans-serif
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        caption {
+            font-size: 1em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: red;
+
+        }
+
+        .csexo {
+            background-color: yellow;
+
+        }
+
+        .cidade {
+            background-color: green;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    
+        <table>
+
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="2">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+
+            <caption>cadastro</caption>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">sexo</th>
+                <th scope="col">idade</th>
+                <th scope="col">profissao</th>
+            </tr>
+
+            <tr>
+                <td>Lucas</td>
+                <td>F</td>
+                <td>21</td>
+                <td>garoto de programa</td>
+            </tr>
+
+            <tr>
+                <td>Fabricio</td>
+                <td>M</td>
+                <td>21</td> 
+                <td>escravo senior (solano)</td>
+            </tr>
+
+            <tr>
+                <td>Gustavo alex</td>
+                <td>M</td>
+                <td>19</td>
+                <td>escravo do solano</td>
+            </tr>
+
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>32</td>
+                <td>Motoboy </td>
+            </tr>
+
+            <tr>
+                <td>Amanda</td>
+                <td>F</td>
+                <td>19</td>
+                <td>noiva dos Gustavos</td>
+            </tr>
+
+            <tr>
+                <td>Solano</td>
+                <td>M</td>
+                <td>56</td>
+                <td>dono da firma</td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+
+
+
+
+</body>
+</html>
