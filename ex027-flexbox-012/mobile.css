@@ -9,7 +9,7 @@ header > h1 {
     justify-content: center;
 }
 header > nav > a {
-    
+    width: 90vw;
 }
 header{
     text-align: center;
